@@ -1,0 +1,111 @@
+*{
+	box-sizing : border-box;
+}
+
+body{
+	background-color: #000;
+}
+
+.container{
+	top: 100px;
+	padding-left: 80px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	background-color: #fff;
+}
+
+.ryu{
+	width: 600px;
+	height: 500px;
+	float: left;
+}
+
+.hadouken, .ryu-still, .ryu-ready, .ryu-throwing , .ryu-cool{
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 500px;
+}
+
+.hadouken, .ryu-ready, .ryu-throwing , .ryu-cool{
+    display: none;
+} 
+
+.ryu-still{
+	background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-ready{
+	background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-throwing{
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool{
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	top: 158px;
+	left: 571px;
+}
+
+.hadouken{
+	background-image: url('../images/hadouken.gif');
+}
+
+.instructions{
+	width: 669px;
+	height: 500px;
+	float: left;
+	padding-top: 80px;
+}
+
+#sf-logo, #brought-by, #jquery-logo, #text{
+	display: none;
+}
+
+#sf-logo{
+	width: 669px;
+	height: 500px;
+	background-repeat: no-repeat;
+}
+
+#jquery-logo{
+	width: 669px;
+	height: 500px;
+	background-repeat: no-repeat;
+}
+
+#sf-logo{
+	background-image: url('../images/sf-logo.png');
+}
+
+#jquery-logo{
+	background-image: url('../images/jquery-logo.png');
+}
+
+#brought-by , #text{
+	font-family: 'Monoton', cursive;
+	text-shadow: 4px 4px 4px #aaa;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#text p {
+  width: 50%;
+  line-height: 40px;
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+#text >p + p {
+  margin-left: 240px;
+}
